@@ -11,7 +11,26 @@ const stats=[['28','Active Clients'],['22','Day Shift'],['18','Night Shift'],['2
 function head(t){return `<header><div><small>CARE 4 EVER</small><h1>${t}</h1></div><i>A</i></header>`}
 function nav(p){return `<nav>${[['dashboard','⌂','Home'],['clients','♙','Clients'],['nurses','✚','Nurses'],['roster','▦','Roster'],['more','☰','More']].map(x=>`<button class="${p==x[0]?'on':''}" onclick="go('${x[0]}')"><b>${x[1]}</b><span>${x[2]}</span></button>`).join('')}</nav>`}
 const f=(l,p='')=>`<label>${l}<input placeholder="${p||l}"></label>`;
-function go(p){let h=''; if(p==='dashboard')h=head('Admin Dashboard')+`<main><section class="hero"><p>Today · 30 September 2026</p><h2>Home Care Operations</h2><div class="stats">${stats.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}</div></section><h3>Quick actions</h3><div class="quick"><button onclick="go('enquiry')">＋<span>New Enquiry</span></button><button onclick="go('newclient')">♙<span>New Client</span></button><button onclick="go('roster')">▦<span>Assign Nurse</span></button><button onclick="go('accounts')">₹<span>Receive Payment</span></button></div><h3>Needs attention</h3><article><b>⚠</b><div><b>2 vacant duties</b><p>Tomorrow's roster needs assignment.</p></div></article></main>`+nav(p);
+function go(p){let h=''; if(p==='dashboard')h=head('Professional Home Care Services')+`<main class="dashboard-main">
+<section class="hero">
+  <div class="hero-top"><div><p>▣ &nbsp;Today · 30 September 2026</p><h2>Home Care Operations</h2><div class="tagline">Real Care. Real People. A Healthier Home.</div></div><div class="safe-care"><b>Safe Care</b><span>At Home<br>For A Better Tomorrow</span><strong>⌂♥</strong></div></div>
+  <div class="stats">
+    <div><em>👥</em><b>28</b><span>Active Clients</span><i>›</i></div>
+    <div><em>☀</em><b>22</b><span>Day Shift</span><i>›</i></div>
+    <div><em>☾</em><b>18</b><span>Night Shift</span><i>›</i></div>
+    <div><em>▣</em><b>2</b><span>Vacant Duties</span><i>›</i></div>
+  </div>
+</section>
+<div class="section-title"><h3>Quick actions</h3><span>Small Support · Big Difference ♡</span></div>
+<div class="quick">
+ <button onclick="go('enquiry')"><strong>▤＋</strong><span>New Enquiry<small>Register a new enquiry</small></span><i>›</i></button>
+ <button onclick="go('newclient')"><strong>♟＋</strong><span>New Client<small>Add a new client</small></span><i>›</i></button>
+ <button onclick="go('roster')"><strong>♟</strong><span>Assign Nurse<small>Allocate or change nurse</small></span><i>›</i></button>
+ <button onclick="go('accounts')"><strong>₹</strong><span>Receive Payment<small>Record a client payment</small></span><i>›</i></button>
+</div>
+<h3>Needs attention</h3>
+<article class="attention"><strong>⚠</strong><div><b>2 vacant duties</b><p>Tomorrow's roster needs assignment.</p></div><button onclick="go('roster')">View Roster&nbsp; ›</button></article>
+</main>`+nav(p);
 else if(p==='enquiry')h=head('New Enquiry')+`<main><form>${f('Caller Name *')}${f('Relationship *')}${f('Mobile Number *')}${f('Client Name *')}${f('Area / Location *')}<label>Service Required<select><option>Day Shift</option><option>Night Shift</option><option>Day + Night</option><option>Single Visit</option></select></label>${f('Required From','dd-mm-yyyy')}<label>Clinical Requirement<textarea></textarea></label><button type="button" class="primary" onclick="go('newclient')">Save & Convert to Client</button></form></main>`;
 else if(p==='clients')h=head('Clients')+`<main><button class="primary full" onclick="go('newclient')">＋ New Client</button>${['Lakshmi — Anna Nagar — Day + Night','Raman — Mogappair — Day Shift'].map((x,i)=>`<article><div><b>${x}</b><p>HC-2026-000${i+1} · Active</p></div><button onclick="go('service')">Open</button></article>`).join('')}</main>`+nav(p);
 else if(p==='newclient')h=head('Client Registration')+`<main><div class="steps">1 Personal · 2 Medical · 3 Family · 4 Service</div><form>${f('Client Name *')}${f('DOB / Age *')}${f('Mobile Number')}${f('Full Address *')}${f('Area / Landmark *')}<button type="button">⌖ Capture Home Location</button><h3>Medical</h3>${f('Primary Diagnosis / Condition *')}${f('Previous / Recent Hospital')}${f('Treating Doctor')}<h3>Primary Family Contact</h3>${f('Name *')}${f('Relationship *')}${f('Mobile / WhatsApp *')}<h3>Secondary Family Contact</h3>${f('Name')}${f('Relationship')}${f('Mobile / WhatsApp')}<button type="button" class="primary" onclick="go('service')">Save & Continue</button></form></main>`;

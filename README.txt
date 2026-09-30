@@ -1,18 +1,8 @@
-CARE 4 EVER v0.7 — APPROVED BRIGHT UI
-
-UI:
-• Implements the approved bright premium direction.
-• Larger, stronger CARE 4 EVER identity.
-• Aqua / pink / cream background accents.
-• Brighter green, orange, violet and pink operation cards.
-• Color-coded Quick Actions.
-• Stronger typography, contrast, spacing and shadows.
-• Back / Home / Close standard retained.
-• Existing workflow preserved.
-
-SQL:
-• SQL folder retained from v0.6.
-• No database schema change in this visual release.
-
-GitHub:
-Replace index.html and styles.css only.
+CARE 4 EVER v0.8 — APPROVED MOCK-UP CORRECTION
+• Dashboard rebuilt much closer to the approved bright mock-up.
+• Added richer CARE 4 EVER branding, tagline, Safe Care panel, icons, descriptions and View Roster.
+• Removed the large empty gap before the bottom menu.
+• Bottom menu now follows the dashboard content and remains sticky when scrolling.
+• Back / Home / Close retained on operational pages.
+• No SQL/schema change from v0.7; SQL folder retained.
+GitHub: replace index.html and styles.css.
