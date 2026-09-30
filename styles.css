@@ -92,3 +92,101 @@ nav button.on{
   header small{font-size:19px !important}
   header h1{font-size:23px !important}
 }
+
+/* ============================================================
+   CARE 4 EVER v0.7 — APPROVED BRIGHT PREMIUM VISUAL DIRECTION
+   ============================================================ */
+:root{
+ --teal:#007f86; --teal2:#00a884; --pink:#d81b72; --blue:#1565d8;
+ --violet:#6554e8; --orange:#ef8b00; --ink:#10254d; --muted:#60708e;
+}
+body{
+ background:
+   radial-gradient(circle at 0 0,rgba(83,214,239,.22),transparent 28rem),
+   radial-gradient(circle at 100% 10%,rgba(255,132,197,.20),transparent 28rem),
+   linear-gradient(180deg,#ffffff,#f7fbff 60%,#fff8fd) !important;
+ color:var(--ink) !important;
+}
+header{
+ padding:20px 64px 22px !important;
+ background:
+  radial-gradient(ellipse at 15% 20%,rgba(65,211,224,.20),transparent 40%),
+  radial-gradient(ellipse at 88% 20%,rgba(255,111,185,.19),transparent 38%),
+  linear-gradient(100deg,#f8feff,#fffdf8 50%,#fff8fd) !important;
+}
+header small{
+ font-size:27px !important;
+ letter-spacing:2px !important;
+ color:var(--teal) !important;
+ font-weight:950 !important;
+}
+header h1{
+ font-size:13px !important;
+ letter-spacing:3.5px !important;
+ text-transform:uppercase;
+ color:#315b78 !important;
+ margin-top:12px !important;
+}
+.hero{
+ border-radius:25px !important;
+ background:rgba(255,255,255,.90) !important;
+ border:1px solid #dbe9f0 !important;
+ box-shadow:0 18px 45px rgba(34,72,111,.11) !important;
+}
+.hero h2{font-size:28px !important;color:#10254d !important}
+.hero p{color:#657590 !important}
+.stats{gap:14px !important}
+.stats div{
+ min-height:112px;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ padding:18px 20px !important;
+ border-radius:19px !important;
+ box-shadow:0 10px 24px rgba(29,65,105,.08) !important;
+}
+.stats div:nth-child(1){background:linear-gradient(135deg,#d9fff1,#f7fffb) !important;border-color:#85e4c3 !important}
+.stats div:nth-child(2){background:linear-gradient(135deg,#fff1d6,#fffaf2) !important;border-color:#f3c66f !important}
+.stats div:nth-child(3){background:linear-gradient(135deg,#e9e4ff,#faf9ff) !important;border-color:#bcb1ff !important}
+.stats div:nth-child(4){background:linear-gradient(135deg,#ffddeb,#fff7fb) !important;border-color:#f4a9cb !important}
+.stats b{font-size:34px !important;color:#10254d !important}
+.stats div:nth-child(2) b{color:#b94e08 !important}
+.stats div:nth-child(4) b{color:#c31560 !important}
+.quick{gap:14px !important}
+.quick button{
+ min-height:108px !important;
+ text-align:left;
+ padding:20px !important;
+ border-radius:19px !important;
+ font-size:29px !important;
+ box-shadow:0 11px 25px rgba(28,67,107,.09) !important;
+}
+.quick button:nth-child(1){background:linear-gradient(135deg,#d9fff1,#f8fffc) !important;border-color:#8ee7c8 !important;color:#00a884 !important}
+.quick button:nth-child(2){background:linear-gradient(135deg,#dcebff,#f8fbff) !important;border-color:#94c2ff !important;color:#1565d8 !important}
+.quick button:nth-child(3){background:linear-gradient(135deg,#e9e4ff,#faf9ff) !important;border-color:#bcb1ff !important;color:#6554e8 !important}
+.quick button:nth-child(4){background:linear-gradient(135deg,#ffddea,#fff7fb) !important;border-color:#f4a8c9 !important;color:#d81b72 !important}
+.quick span{font-size:16px !important;color:#10254d !important}
+h3{font-size:20px !important;color:#10254d !important}
+article{
+ border-radius:19px !important;
+ background:linear-gradient(100deg,#fff7fa,#ffffff) !important;
+ border-color:#f0c7da !important;
+ box-shadow:0 10px 25px rgba(168,40,102,.07) !important;
+}
+article strong, article b{color:#c31560 !important}
+nav{
+ box-shadow:0 -8px 25px rgba(25,61,98,.07);
+}
+nav button.on{
+ background:linear-gradient(180deg,#ffe2f0,#fff6fb) !important;
+ color:#b60e60 !important;
+ border-radius:16px 16px 0 0;
+}
+.page-nav{
+ background:rgba(255,255,255,.92) !important;
+}
+@media(max-width:600px){
+ header small{font-size:24px !important}
+ .hero h2{font-size:25px !important}
+ .stats b{font-size:30px !important}
+}
