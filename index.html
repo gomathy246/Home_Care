@@ -1,4 +1,11 @@
-<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Care 4 Ever</title><link rel="stylesheet" href="./styles.css"></head><body><div id="app" class="app"></div><script>
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Care 4 Ever</title><link rel="stylesheet" href="./styles.css"></head><body>
+
+<div class="page-nav" aria-label="Page navigation">
+  <button type="button" class="nav-btn" onclick="history.back()">← Back</button>
+  <button type="button" class="nav-btn" onclick="window.location.href='./'">⌂ Home</button>
+  <button type="button" class="nav-btn nav-close" onclick="window.location.href='./'">✕ Close</button>
+</div>
+<div id="app" class="app"></div><script>
 const A=document.getElementById('app');
 const stats=[['28','Active Clients'],['22','Day Shift'],['18','Night Shift'],['2','Vacant Duties']];
 function head(t){return `<header><div><small>CARE 4 EVER</small><h1>${t}</h1></div><i>A</i></header>`}
