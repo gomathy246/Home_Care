@@ -255,3 +255,6 @@ header h1{
 
 /* v0.10 Client Registration */
 .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}.client-card{align-items:flex-start}.client-card h3{margin:10px 0 4px}.client-card>button{align-self:center}@media(max-width:600px){.two-col{grid-template-columns:1fr}.client-card{display:grid!important}.client-card>button{width:100%}}
+
+/* v0.11 Start Service */
+.client-summary{margin-bottom:16px;padding:18px;border:1px solid #cfe6df;border-radius:18px;background:linear-gradient(135deg,#e7fbf4,#fff9ed);box-shadow:0 9px 24px rgba(28,67,107,.07)}.client-summary h2{margin:9px 0 3px}.client-summary p{margin:0;color:#66758d}label small{font-weight:500;color:#77849a}
