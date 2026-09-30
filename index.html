@@ -1,7 +1,7 @@
-<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HomeCare</title><link rel="stylesheet" href="./styles.css"></head><body><div id="app" class="app"></div><script>
+<!doctype html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Care 4 Ever</title><link rel="stylesheet" href="./styles.css"></head><body><div id="app" class="app"></div><script>
 const A=document.getElementById('app');
 const stats=[['28','Active Clients'],['22','Day Shift'],['18','Night Shift'],['2','Vacant Duties']];
-function head(t){return `<header><div><small>HOMECARE</small><h1>${t}</h1></div><i>A</i></header>`}
+function head(t){return `<header><div><small>CARE 4 EVER</small><h1>${t}</h1></div><i>A</i></header>`}
 function nav(p){return `<nav>${[['dashboard','⌂','Home'],['clients','♙','Clients'],['nurses','✚','Nurses'],['roster','▦','Roster'],['more','☰','More']].map(x=>`<button class="${p==x[0]?'on':''}" onclick="go('${x[0]}')"><b>${x[1]}</b><span>${x[2]}</span></button>`).join('')}</nav>`}
 const f=(l,p='')=>`<label>${l}<input placeholder="${p||l}"></label>`;
 function go(p){let h=''; if(p==='dashboard')h=head('Admin Dashboard')+`<main><section class="hero"><p>Today · 30 September 2026</p><h2>Home Care Operations</h2><div class="stats">${stats.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join('')}</div></section><h3>Quick actions</h3><div class="quick"><button onclick="go('enquiry')">＋<span>New Enquiry</span></button><button onclick="go('newclient')">♙<span>New Client</span></button><button onclick="go('roster')">▦<span>Assign Nurse</span></button><button onclick="go('accounts')">₹<span>Receive Payment</span></button></div><h3>Needs attention</h3><article><b>⚠</b><div><b>2 vacant duties</b><p>Tomorrow's roster needs assignment.</p></div></article></main>`+nav(p);
