@@ -252,3 +252,6 @@ header h1{
   font-weight:850 !important;
   opacity:1 !important;
 }
+
+/* v0.10 Client Registration */
+.two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px}.client-card{align-items:flex-start}.client-card h3{margin:10px 0 4px}.client-card>button{align-self:center}@media(max-width:600px){.two-col{grid-template-columns:1fr}.client-card{display:grid!important}.client-card>button{width:100%}}
