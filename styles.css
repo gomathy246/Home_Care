@@ -226,3 +226,29 @@ nav button{min-height:60px}
 }
 
 .c4e-form{gap:16px}.form-section{display:grid;gap:12px;padding:17px;border:1px solid #dce9ee;border-radius:18px;background:linear-gradient(145deg,#fff,#f8fcff);box-shadow:0 8px 22px rgba(28,67,107,.06)}.form-section h3{margin:0 0 3px}.list-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}.list-head h2{margin:0}.list-head p{margin:4px 0;color:#6b7890}.enquiry-card{align-items:flex-start}.enquiry-card h3{margin:10px 0 3px}.card-actions{display:grid;gap:8px;min-width:130px}.ghost-danger{background:#fff!important;color:#bd315d!important;border:1px solid #efb5c8!important}@media(max-width:600px){.enquiry-card{display:grid!important}.card-actions{grid-template-columns:1fr 1fr;width:100%}}
+
+/* v0.9a HEADER VISIBILITY FIX */
+header small{
+  background:none !important;
+  -webkit-background-clip:initial !important;
+  background-clip:initial !important;
+  color:#007b86 !important;
+  -webkit-text-fill-color:#007b86 !important;
+  text-shadow:none !important;
+  font-size:30px !important;
+  font-weight:950 !important;
+  letter-spacing:1.6px !important;
+  opacity:1 !important;
+}
+header small::first-letter{color:#007b86 !important}
+header small:after{
+  content:" ♥" !important;
+  color:#d31975 !important;
+  -webkit-text-fill-color:#d31975 !important;
+}
+header h1{
+  color:#164b68 !important;
+  -webkit-text-fill-color:#164b68 !important;
+  font-weight:850 !important;
+  opacity:1 !important;
+}
