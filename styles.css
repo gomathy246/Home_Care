@@ -12,3 +12,83 @@ form{display:grid;gap:13px}label{display:grid;gap:6px;font-size:13px;font-weight
 .steps,.date,.total,.empty{padding:16px;border:1px solid #e1e9e6;border-radius:16px;background:rgba(255,255,255,.88);box-shadow:0 7px 18px rgba(31,58,51,.05)}.steps{margin-bottom:16px;color:#657570}.date{text-align:center;margin-bottom:12px}.total{display:flex;justify-content:space-between;align-items:center}.total b{font-size:21px}.pill{padding:8px 11px;border-radius:999px;background:#edf8f3;color:#397762;font-size:12px;font-weight:800}.empty{text-align:center;padding:36px 20px}
 nav{position:fixed;bottom:0;left:50%;transform:translateX(-50%);width:min(760px,100%);display:grid;grid-template-columns:repeat(5,1fr);background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid #dfe7e4;z-index:900}nav button{border:0;background:transparent;padding:10px 4px;color:#788681}nav button b,nav button span{display:block}nav button b{font-size:19px}nav button span{font-size:11px;margin-top:3px}nav button.on{color:#397762;font-weight:850}
 @media(max-width:600px){.page-nav{justify-content:space-between}.nav-btn{flex:1}header h1{font-size:23px}main{padding:14px}.hero{padding:18px}}
+
+
+/* ============================================================
+   CARE 4 EVER v0.6 — Brighter premium dashboard
+   ============================================================ */
+body{
+  background:
+    radial-gradient(circle at 10% 4%, rgba(255,218,169,.26), transparent 22rem),
+    radial-gradient(circle at 92% 10%, rgba(166,221,205,.27), transparent 25rem),
+    linear-gradient(180deg,#fffdf9 0%,#f7fbfa 46%,#fff 100%) !important;
+}
+header{
+  position:relative;
+  display:block !important;
+  text-align:center;
+  padding:22px 58px 20px !important;
+  background:
+    linear-gradient(110deg,rgba(224,247,239,.95),rgba(255,243,224,.95) 50%,rgba(239,237,255,.95)) !important;
+  border-bottom:1px solid #dbe7e2 !important;
+}
+header small{
+  display:block;
+  text-align:center;
+  font-size:20px !important;
+  line-height:1.1;
+  letter-spacing:2.2px !important;
+  font-weight:950 !important;
+  color:#28745d !important;
+  text-shadow:0 1px 0 #fff;
+}
+header h1{
+  margin:8px 0 0 !important;
+  text-align:center;
+  font-size:24px !important;
+  color:#163d34;
+}
+header i{
+  position:absolute;
+  right:18px;
+  top:24px;
+}
+.hero{
+  background:
+    linear-gradient(120deg,rgba(232,250,243,.98),rgba(255,247,232,.98) 52%,rgba(245,241,255,.98)) !important;
+  border:1px solid #d5e7df !important;
+  box-shadow:0 14px 32px rgba(39,94,76,.10) !important;
+}
+.hero h2{color:#174c3e !important}
+.stats div{
+  border-width:1px !important;
+  box-shadow:0 9px 22px rgba(34,74,62,.075) !important;
+}
+.stats div:nth-child(1){background:linear-gradient(135deg,#dff7ed,#f8fffc) !important;border-color:#cce9dd !important}
+.stats div:nth-child(2){background:linear-gradient(135deg,#fff0d8,#fffaf2) !important;border-color:#f0ddbd !important}
+.stats div:nth-child(3){background:linear-gradient(135deg,#e8e5ff,#faf9ff) !important;border-color:#dad5f6 !important}
+.stats div:nth-child(4){background:linear-gradient(135deg,#ffe2e7,#fff8f9) !important;border-color:#f2d1d7 !important}
+.stats b{font-size:28px !important;color:#173f35}
+.quick button{
+  background:linear-gradient(145deg,#ffffff,#f2faf7) !important;
+  border-color:#d7e7e1 !important;
+  box-shadow:0 10px 25px rgba(38,82,68,.085) !important;
+  transition:transform .15s ease,box-shadow .15s ease;
+}
+.quick button:nth-child(2){background:linear-gradient(145deg,#fff,#fff7e9) !important}
+.quick button:nth-child(3){background:linear-gradient(145deg,#fff,#f3f1ff) !important}
+.quick button:nth-child(4){background:linear-gradient(145deg,#fff,#fff0f2) !important}
+.quick button:active{transform:scale(.985)}
+h3{color:#17483b}
+article{
+  background:linear-gradient(120deg,#fff,#fff8ec 55%,#f4fbf8) !important;
+  border-color:#dce8e3 !important;
+}
+nav button.on{
+  background:linear-gradient(180deg,#edf9f4,#fff);
+  color:#247058 !important;
+}
+@media(max-width:600px){
+  header small{font-size:19px !important}
+  header h1{font-size:23px !important}
+}
